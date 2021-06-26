@@ -1,0 +1,21 @@
+server:
+    servlet:
+        context-path: /integration
+spring:
+    security:
+        oauth2:
+            client:
+                registration:
+                    cognito:
+                        clientId: 57psk2nrno965sbvcrj4rlltcv
+                        clientSecret: vnlifvfndicildlv1fe9t63p90d29esg4sf0nnl51idlnt600ir
+                        scope: openid
+                        redirect-url: http://localhost:8080/integration/login/oauth2/code/cognito
+                        clientName: lanphan-springboot-microservices
+                provider:
+                    cognito:
+                        issuerUri: https://cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_8QPRSXRvr
+                        user-name-attribute:
+                            cognito: username
+                        userInfoUri: https://lanphan.auth.ap-southeast-1.amazoncognito.com/oauth2/userInfo
+                        tokenUri: https://lanphan.auth.ap-southeast-1.amazoncognito.com/oauth2/token

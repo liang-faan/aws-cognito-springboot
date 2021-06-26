@@ -1,0 +1,27 @@
+{
+    "authorization_endpoint": "https://lanphan.auth.ap-southeast-1.amazoncognito.com/oauth2/authorize",
+    "id_token_signing_alg_values_supported": [
+        "RS256"
+    ],
+    "issuer": "https://cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_8QPRSXRvr",
+    "jwks_uri": "https://cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_8QPRSXRvr/.well-known/jwks.json",
+    "response_types_supported": [
+        "code",
+        "token"
+    ],
+    "scopes_supported": [
+        "openid",
+        "email",
+        "phone",
+        "profile"
+    ],
+    "subject_types_supported": [
+        "public"
+    ],
+    "token_endpoint": "https://lanphan.auth.ap-southeast-1.amazoncognito.com/oauth2/token",
+    "token_endpoint_auth_methods_supported": [
+        "client_secret_basic",
+        "client_secret_post"
+    ],
+    "userinfo_endpoint": "https://lanphan.auth.ap-southeast-1.amazoncognito.com/oauth2/userInfo"
+}
